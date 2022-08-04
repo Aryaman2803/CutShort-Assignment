@@ -46,7 +46,7 @@ function Stepper({ steps, currentStep }) {
 
   useEffect(() => {
     const stepState = steps.map((step, index) => {
-      Object.assign(
+      return Object.assign(
         {},
         {
           description: step,
